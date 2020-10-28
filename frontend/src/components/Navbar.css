@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem;
+}
+
+.navbar-dark {
+    background: rgb(32, 32, 34);
+}
+
+.navbar__logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.navbar__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__items {
+    list-style: none;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+}

@@ -1,0 +1,60 @@
+h3 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: rgb(32, 32, 34);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.form-control, .form-dp-control {
+    padding: 0.3rem;
+    margin: 10px 0;
+    outline-style: none;
+}
+
+.form-control {
+    width: 100%;    
+}
+
+.form-dp-control {
+    width: 50%;
+}
+
+.btn {
+    margin-top: 10px;
+    outline-style: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #0271b1;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #0b99eb;
+}
+
+@media screen and (min-width: 550px) {
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-control {
+        width: 450px;    
+    }
+    
+    .form-dp-control {
+        width: 230px;
+    }
+}
