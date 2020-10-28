@@ -7,7 +7,7 @@ const usersRoute = require('./routes/users');
 const exercisesRoute = require('./routes/exercises');
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT;
 const uri = process.env.MONGO_URI;
 
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true });

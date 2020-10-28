@@ -28,5 +28,12 @@
 .nav__link {
     text-decoration: none;
     color: #fff;
-    margin-left: 20px;
+    margin-left: 3px;
+    padding: 0.8rem;
+}
+
+.nav__link:hover {
+    background: #333232;
+    color: #fff;
+    border-radius: 1rem;
 }
