@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Exercise from './Exercise';
 import axios from 'axios';
+import '../App.css';
 
 const ExerciseList = () => {
 	useEffect(() => {

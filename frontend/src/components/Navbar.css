@@ -1,8 +1,15 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.3rem;
+    width: 100%;
 }
 
 .navbar-dark {
@@ -36,4 +43,18 @@
     background: #333232;
     color: #fff;
     border-radius: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar__nav {
+        margin: 0 auto;
+    }
+    .navbar__logo {
+        display: none;
+    }
+    .nav__link {
+        padding: 0;
+        margin: 0 10px;
+        font-size: 0.9rem;
+    }
 }
