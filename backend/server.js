@@ -3,15 +3,21 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-const usersRoute = require('./routes/users');
-const exercisesRoute = require('./routes/exercises');
+const usersRoute = require('./routes/user.routes');
+const exercisesRoute = require('./routes/exercise.routes');
 
 const app = express();
 const port = process.env.PORT;
 const uri = process.env.MONGO_URI;
 
-mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true });
-mongoose.connection.once('open', () => console.log('MongoDB connection established successfully'));
+mongoose.connect(uri, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+});
+mongoose.connection.once('open', () =>
+    console.log('MongoDB connection established successfully')
+);
 
 app.use(cors());
 app.use(express.json());
